@@ -55,6 +55,7 @@ h4 {
 	width: 100%;
 	max-width: 1000px;
 	margin: 0 auto;
+	padding: 0 10px;
 }
 
 #openNav {
@@ -625,7 +626,7 @@ footer p span:last-child:before {
 
 /*============== Media Queries ==================*/
 
-@media only screen and (max-width : 834px) {
+@media screen and (max-width : 845px) {
 
 	header {
 		position: static;
@@ -691,13 +692,13 @@ footer p span:last-child:before {
 
 	#about {
 		background-size: contain;
-		background-position: 100px;
+		background-position: left 50px center;
 	}
 
 	.about {
 		transform: scale(0.8);
 		padding: 0;
-		width: 65%;
+		width: 70%;
 	}
 
 
@@ -845,11 +846,11 @@ footer p span:last-child:before {
 	}
 
 	.up {
-		bottom: 280px;
+		bottom: 130px;
 	}
 }
 
-@media only screen and (max-width : 400px) {
+@media screen and (max-width : 400px) {
 
 	h2 {
 		font-size: 1.5em;
@@ -895,6 +896,23 @@ footer p span:last-child:before {
 
 	.news-pg-txt ul li:before {
 		margin-left: -20px;
+	}
+
+	.foot-nav {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+	}
+
+
+	footer p {
+		display: flex;
+		flex-wrap: wrap;
+	}
+
+	.up {
+		bottom: 300px;
+		right: 50px;
 	}
 
 }
